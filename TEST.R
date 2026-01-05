@@ -54,7 +54,7 @@ print(paste("RMSE:", round(rmse, 3)))
 model <- lm(upper_arm ~ 0 + thigh, data = train_data)
 summary(model)
 
-df <- read.csv("C:/Users/ji040/OneDrive/바탕 화면/자료/diabetes/diabetes.csv", header = TRUE, na =".", stringsAsFactors = TRUE)
+ df <- read.csv("C:/Users/ji040/OneDrive/바탕 화면/자료/diabetes/diabetes.csv", header = TRUE, na =".", stringsAsFactors = TRUE)
 skim(df)
 
 df <- select(df, -c())
